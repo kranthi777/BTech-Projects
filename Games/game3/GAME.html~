@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body style=background-image:url("172.jpg");>
+<img id="one" src="loading1.gif" style="position:absolute; left:15%; height:70%; width:70%; top:20%;" />
+<audio controls id="two" onended="moveRight();" onpause="moveRight();">
+  
+  <source id="six"src="1.m4a" type="audio/mpeg">
+
+</audio>
+<button id="one" onclick="timedText()">Start</button>
+<button id="two" onclick="init();">Reset</button>
+<p id="three"></p>
+<p id="demo"></p>
+<button id="four" onclick="check();">Submit</button>
+<p id="five"></p>
+<p id="seven"></p>
+<p id="eight" style="position:absolute;background-color:#003300;opacity:0.95;width:100px;height:300px;top:140px;left:70px;z-index:2;"></p>
+
+<p id="aa" onclick="stop1();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">अ</p>
+<p id="bb" onclick="stop2();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">आ</p>
+<p id="cc" onclick="stop3();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">इ</p>
+<p id="dd" onclick="stop4();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ई</p>
+<p id="ee" onclick="stop5();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">उ</p>
+<p id="ff" onclick="stop6();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ऊ</p>
+<p id="gg" onclick="stop7();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ए</p>
+<p id="hh" onclick="stop8();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ऐ</p>
+<p id="ii" onclick="stop9();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ओ</p>
+<p id="jj" onclick="stop10();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">औ</p>
+<p id="kk" onclick="stop11();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">क</p>
+<p id="ll" onclick="stop12();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ख</p>
+<p id="mm" onclick="stop13();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ग</p>
+<p id="nn" onclick="stop14();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">घ</p>
+<p id="oo" onclick="stop15();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ङ</p>
+<p id="pp" onclick="stop16();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">च</p>
+<p id="qq" onclick="stop17();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">छ</p>
+<p id="rr" onclick="stop18();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ज</p>
+<p id="ss" onclick="stop19();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">झ</p>
+<p id="tt" onclick="stop20();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ञ</p>
+<p id="uu" onclick="stop21();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ट</p>
+<p id="vv" onclick="stop22();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ठ</p>
+<p id="ww" onclick="stop23();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ड</p>
+<p id="xx" onclick="stop24();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ढ</p>
+<p id="yy" onclick="stop25();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ण</p>
+<p id="zz" onclick="stop26();" style="background-color:#000000;color:#00eeff;font-size:50px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">त</p>
+<p id="aaa" onclick="stop27();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">थ</p>
+<p id="bbb" onclick="stop28();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">द</p>
+<p id="ccc" onclick="stop29();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ध</p>
+<p id="ddd" onclick="stop30();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">न</p>
+<p id="eee" onclick="stop31();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">प</p>
+<p id="fff" onclick="stop32();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">फ</p>
+<p id="ggg" onclick="stop33();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ब</p>
+<p id="hhh" onclick="stop34();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">भ</p>
+<p id="iii" onclick="stop35();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">म</p>
+<p id="jjj" onclick="stop36();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">य</p>
+<p id="kkk" onclick="stop37();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">र</p>
+<p id="lll" onclick="stop38();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ल</p>
+<p id="mmm" onclick="stop39();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">व</p>
+<p id="nnn" onclick="stop40();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">श</p>
+<p id="ooo" onclick="stop41();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ष</p>
+<p id="ppp" onclick="stop42();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">स</p>
+<p id="qqq" onclick="stop43();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ह</p>
+<p id="rrr" onclick="stop44();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ा</p>
+<p id="sss" onclick="stop45();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ि</p>
+<p id="ttt" onclick="stop46();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ी</p>
+<p id="uuu" onclick="stop47();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ु</p>
+<p id="vvv" onclick="stop48();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ू </p>
+<p id="www" onclick="stop49();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ृ</p>
+<p id="xxx" onclick="stop50();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ॄ</p>
+<p id="yyy" onclick="stop51();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ॅ</p>
+<p id="zzz" onclick="stop52();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">े</p>
+<p id="aaaa" onclick="stop53();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ै</p>
+<p id="bbbb" onclick="stop54();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ॉ</p>
+<p id="cccc" onclick="stop55();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ो</p>
+<p id="dddd" onclick="stop56();" style="background-color:#000000;color:#00eeff;font-size:25px; font-weight: bold; border-style:solid; border-color:red;border-radius:50%;">ौ</p>
+<script>
+window.onload =init;
+var imgobj1=null;
+var imgobj2=null;
+var imgobj3=null;
+var imgobj4=null;
+var imgobj5=null;
+var imgobj6=null;
+var imgobj7=null;
+var imgobj8=null;
+var imgobj9=null;
+var imgobj10=null;
+var imgobj11=null;
+var imgobj12=null;
+var imgobj13=null;
+var imgobj14=null;
+var imgobj15=null;
+var imgobj16=null;
+var imgobj17=null;
+var imgobj18=null;
+var imgobj19=null;
+var imgobj20=null;
+var imgobj21=null;
+var imgobj22=null;
+var imgobj23=null;
+var imgobj24=null;
+var imgobj25=null;
+var imgobj26=null;
+var imgobj27=null;
+var imgobj28=null;
+var imgobj29=null;
+var imgobj30=null;
+var imgobj31=null;
+var imgobj32=null;
+var imgobj33=null;
+var imgobj34=null;
+var imgobj35=null;
+var imgobj36=null;
+var imgobj37=null;
+var imgobj38=null;
+var imgobj39=null;
+var imgobj40=null;
+var imgobj41=null;
+var imgobj42=null;
+var imgobj43=null;
+var imgobj44=null;
+var imgobj45=null;
+var imgobj46=null;
+var imgobj47=null;
+var imgobj48=null;
+var imgobj49=null;
+var imgobj50=null;
+var imgobj51=null;
+var imgobj52=null;
+var imgobj53=null;
+var imgobj54=null;
+var imgobj55=null;
+var imgobj56=null;
+var imgobj57=null;
+var imgobj58=null;
+var imgobj59=null;
+var imgobj60=null;
+var count=0;
+function init(){
+imgObj1 = document.getElementById('aa');
+imgObj1.style.position= 'absolute';
+imgObj1.style.left = '100px';
+imgObj1.style.top = '46%';
+imgObj2 = document.getElementById('bb');
+imgObj2.style.position= 'absolute';
+imgObj2.style.left = '100px';
+imgObj2.style.top = '46%';
+imgObj3 = document.getElementById('cc');
+imgObj3.style.position= 'absolute';
+imgObj3.style.left = '100px';
+imgObj3.style.top = '46%';
+imgObj4 = document.getElementById('dd');
+imgObj4.style.position= 'absolute';
+imgObj4.style.left = '100px';
+imgObj4.style.top = '46%';
+imgObj5 = document.getElementById('ee');
+imgObj5.style.position= 'absolute';
+imgObj5.style.left = '100px';
+imgObj5.style.top = '46%';
+imgObj6 = document.getElementById('ff');
+imgObj6.style.position= 'absolute';
+imgObj6.style.left = '100px';
+imgObj6.style.top = '46%';
+imgObj7 = document.getElementById('gg');
+imgObj7.style.position= 'absolute';
+imgObj7.style.left = '100px';
+imgObj7.style.top = '46%';
+imgObj8 = document.getElementById('hh');
+imgObj8.style.position= 'absolute';
+imgObj8.style.left = '100px';
+imgObj8.style.top = '46%';
+imgObj9 = document.getElementById('ii');
+imgObj9.style.position= 'absolute';
+imgObj9.style.left = '100px';
+imgObj9.style.top = '46%';
+imgObj10 = document.getElementById('jj');
+imgObj10.style.position= 'absolute';
+imgObj10.style.left = '100px';
+imgObj10.style.top = '46%';
+imgObj11 = document.getElementById('kk');
+imgObj11.style.position= 'absolute';
+imgObj11.style.left = '100px';
+imgObj11.style.bottom = '46%';
+imgObj12 = document.getElementById('ll');
+imgObj12.style.position= 'absolute';
+imgObj12.style.left = '100px';
+imgObj12.style.top = '46%';
+imgObj13 = document.getElementById('mm');
+imgObj13.style.position= 'absolute';
+imgObj13.style.left = '100px';
+imgObj13.style.top = '46%';
+imgObj14 = document.getElementById('nn');
+imgObj14.style.position= 'absolute';
+imgObj14.style.left = '100px';
+imgObj14.style.top = '46%';
+imgObj15 = document.getElementById('oo');
+imgObj15.style.position= 'absolute';
+imgObj15.style.left = '100px';
+imgObj15.style.top = '46%';
+imgObj16 = document.getElementById('pp');
+imgObj16.style.position= 'absolute';
+imgObj16.style.left = '100px';
+imgObj16.style.top = '46%';
+imgObj17 = document.getElementById('qq');
+imgObj17.style.position= 'absolute';
+imgObj17.style.left = '100px';
+imgObj17.style.top = '46%';
+imgObj18 = document.getElementById('rr');
+imgObj18.style.position= 'absolute';
+imgObj18.style.left = '100px';
+imgObj18.style.bottom = '54%';
+imgObj19 = document.getElementById('ss');
+imgObj19.style.position= 'absolute';
+imgObj19.style.left = '100px';
+imgObj19.style.bottom = '54%';
+imgObj20 = document.getElementById('tt');
+imgObj20.style.position= 'absolute';
+imgObj20.style.left = '100px';
+imgObj20.style.bottom = '54%';
+imgObj21 = document.getElementById('uu');
+imgObj21.style.position= 'absolute';
+imgObj21.style.left = '100px';
+imgObj21.style.bottom = '54%';
+imgObj22 = document.getElementById('vv');
+imgObj22.style.position= 'absolute';
+imgObj22.style.left = '100px';
+imgObj22.style.bottom = '54%';
+imgObj23 = document.getElementById('ww');
+imgObj23.style.position= 'absolute';
+imgObj23.style.left = '100px';
+imgObj23.style.bottom = '54%';
+imgObj24 = document.getElementById('xx');
+imgObj24.style.position= 'absolute';
+imgObj24.style.left = '100px';
+imgObj24.style.bottom = '54%';
+imgObj25 = document.getElementById('yy');
+imgObj25.style.position= 'absolute';
+imgObj25.style.left = '100px';
+imgObj25.style.bottom = '54%';
+imgObj26 = document.getElementById('zz');
+imgObj26.style.position= 'absolute';
+imgObj26.style.left = '100px';
+imgObj26.style.bottom = '54%';
+imgObj27 = document.getElementById('aaa');
+imgObj27.style.position= 'absolute';
+imgObj27.style.left = '100px';
+imgObj27.style.bottom = '54%';
+imgObj28 = document.getElementById('bbb');
+imgObj28.style.position= 'absolute';
+imgObj28.style.left = '100px';
+imgObj28.style.bottom = '54%';
+imgObj29 = document.getElementById('ccc');
+imgObj29.style.position= 'absolute';
+imgObj29.style.left = '100px';
+imgObj29.style.bottom = '54%';
+imgObj30 = document.getElementById('ddd');
+imgObj30.style.position= 'absolute';
+imgObj30.style.left = '100px';
+imgObj30.style.bottom = '54%';
+imgObj31 = document.getElementById('eee');
+imgObj31.style.position= 'absolute';
+imgObj31.style.right = '90%';
+imgObj31.style.top = '46%';
+imgObj32 = document.getElementById('fff');
+imgObj32.style.position= 'absolute';
+imgObj32.style.right = '90%';
+imgObj32.style.top = '46%';
+imgObj33 = document.getElementById('ggg');
+imgObj33.style.position= 'absolute';
+imgObj33.style.right = '90%';
+imgObj33.style.top = '46%';
+imgObj34 = document.getElementById('hhh');
+imgObj34.style.position= 'absolute';
+imgObj34.style.right = '90%';
+imgObj34.style.top = '46%';
+imgObj35 = document.getElementById('iii');
+imgObj35.style.position= 'absolute';
+imgObj35.style.right = '90%';
+imgObj35.style.top = '46%';
+imgObj36 = document.getElementById('jjj');
+imgObj36.style.position= 'absolute';
+imgObj36.style.right = '90%';
+imgObj36.style.top = '46%';
+imgObj37 = document.getElementById('kkk');
+imgObj37.style.position= 'absolute';
+imgObj37.style.right = '90%';
+imgObj37.style.top = '46%';
+imgObj38 = document.getElementById('lll');
+imgObj38.style.position= 'absolute';
+imgObj38.style.right = '90%';
+imgObj38.style.top = '46%';
+imgObj39 = document.getElementById('mmm');
+imgObj39.style.position= 'absolute';
+imgObj39.style.right = '90%';
+imgObj39.style.top = '46%';
+imgObj40 = document.getElementById('nnn');
+imgObj40.style.position= 'absolute';
+imgObj40.style.right = '90%';
+imgObj40.style.top = '46%';
+imgObj41 = document.getElementById('ooo');
+imgObj41.style.position= 'absolute';
+imgObj41.style.right = '90%';
+imgObj41.style.top = '46%';
+imgObj42 = document.getElementById('ppp');
+imgObj42.style.position= 'absolute';
+imgObj42.style.right = '90%';
+imgObj42.style.top = '46%';
+imgObj43 = document.getElementById('qqq');
+imgObj43.style.position= 'absolute';
+imgObj43.style.right = '90%';
+imgObj43.style.top = '46%';
+imgObj44 = document.getElementById('rrr');
+imgObj44.style.position= 'absolute';
+imgObj44.style.right = '90%';
+imgObj44.style.bottom = '54%';
+imgObj45 = document.getElementById('sss');
+imgObj45.style.position= 'absolute';
+imgObj45.style.right = '90%';
+imgObj45.style.bottom = '54%';
+imgObj46 = document.getElementById('ttt');
+imgObj46.style.position= 'absolute';
+imgObj46.style.right = '90%';
+imgObj46.style.bottom = '54%';
+imgObj47 = document.getElementById('uuu');
+imgObj47.style.position= 'absolute';
+imgObj47.style.right = '90%';
+imgObj47.style.bottom = '54%';
+imgObj48 = document.getElementById('vvv');
+imgObj48.style.position= 'absolute';
+imgObj48.style.right = '90%';
+imgObj48.style.bottom = '54%';
+imgObj49 = document.getElementById('www');
+imgObj49.style.position= 'absolute';
+imgObj49.style.right = '90%';
+imgObj49.style.bottom = '54%';
+imgObj50 = document.getElementById('xxx');
+imgObj50.style.position= 'absolute';
+imgObj50.style.right = '90%';
+imgObj50.style.bottom = '54%';
+imgObj51 = document.getElementById('yyy');
+imgObj51.style.position= 'absolute';
+imgObj51.style.right = '90%';
+imgObj51.style.bottom = '54%';
+imgObj52 = document.getElementById('zzz');
+imgObj52.style.position= 'absolute';
+imgObj52.style.right = '90%';
+imgObj52.style.bottom = '54%';
+imgObj53 = document.getElementById('aaaa');
+imgObj53.style.position= 'absolute';
+imgObj53.style.right = '90%';
+imgObj53.style.bottom = '54%';
+imgObj54 = document.getElementById('bbbb');
+imgObj54.style.position= 'absolute';
+imgObj54.style.right = '90%';
+imgObj54.style.bottom = '54%';
+imgObj55 = document.getElementById('cccc');
+imgObj55.style.position= 'absolute';
+imgObj55.style.right = '90%';
+imgObj55.style.bottom = '54%';
+imgObj56 = document.getElementById('dddd');
+imgObj56.style.position= 'absolute';
+imgObj56.style.right = '90%';
+imgObj56.style.bottom = '54%';
+}
+var score=0;
+function check()
+{
+var n=text.localeCompare(array2[count]);
+count++;
+document.getElementById("six").src=array3[count];
+document.getElementById("three").innerHTML="";
+text="";
+if(n==0)
+{
+score++;
+document.getElementById("seven").innerHTML=score;
+}
+else
+{
+document.getElementById("seven").innerHTML=score;
+document.getElementById("five").innerHTML="Wrong Answer";
+} 
+init();
+}
+function moveRight(){
+imgObj1.style.left = parseInt(imgObj1.style.left) + 15 + 'px';
+imgObj2.style.left = parseInt(imgObj2.style.left) + 12 + 'px';
+imgObj3.style.left = parseInt(imgObj3.style.left) + 9 + 'px';
+imgObj4.style.left = parseInt(imgObj4.style.left) + 10 + 'px';
+imgObj4.style.top = parseInt(imgObj4.style.top) + 10 + 'px';
+imgObj5.style.left = parseInt(imgObj5.style.left) + 6 + 'px';
+imgObj6.style.left = parseInt(imgObj6.style.left) + 10 + 'px';
+imgObj6.style.top = parseInt(imgObj6.style.top) + 8 + 'px';
+imgObj7.style.left = parseInt(imgObj7.style.left) + 10 + 'px';
+imgObj7.style.top = parseInt(imgObj7.style.top) + 6 + 'px';
+imgObj8.style.left = parseInt(imgObj8.style.left) + 6 + 'px';
+imgObj8.style.top = parseInt(imgObj8.style.top) + 10 + 'px';
+imgObj9.style.left = parseInt(imgObj9.style.left) + 8 + 'px';
+imgObj9.style.top = parseInt(imgObj9.style.top) + 8 + 'px';
+imgObj10.style.left = parseInt(imgObj10.style.left) + 10 + 'px';
+imgObj10.style.top= parseInt(imgObj10.style.top) +15 + 'px';
+imgObj11.style.left = parseInt(imgObj11.style.left) + 10 + 'px';
+imgObj11.style.bottom = parseInt(imgObj11.style.bottom) + 8 + 'px';
+imgObj12.style.left = parseInt(imgObj12.style.left) + 10 + 'px';
+imgObj12.style.top = parseInt(imgObj12.style.top) + 6 + 'px';
+imgObj13.style.left = parseInt(imgObj13.style.left) + 8 + 'px';
+imgObj13.style.top = parseInt(imgObj13.style.top) + 10 + 'px';
+imgObj14.style.left = parseInt(imgObj14.style.left) + 8 + 'px';
+imgObj14.style.top = parseInt(imgObj14.style.top) + 8 + 'px';
+imgObj15.style.left = parseInt(imgObj15.style.left) + 0 + 'px';
+imgObj15.style.top = parseInt(imgObj15.style.top) + 10 + 'px';
+imgObj16.style.left = parseInt(imgObj16.style.left) + 0 + 'px';
+imgObj16.style.top = parseInt(imgObj16.style.top) + 9 + 'px';
+imgObj17.style.left = parseInt(imgObj17.style.left) + 0 + 'px';
+imgObj17.style.top = parseInt(imgObj17.style.top) + 8 + 'px';
+imgObj18.style.left = parseInt(imgObj18.style.left) + 0 + 'px';
+imgObj18.style.bottom = parseInt(imgObj18.style.bottom) + 7 + 'px';
+imgObj19.style.left = parseInt(imgObj19.style.left) + 0 + 'px';
+imgObj19.style.bottom = parseInt(imgObj19.style.bottom) + 6 + 'px';
+imgObj20.style.left = parseInt(imgObj20.style.left) + 0 + 'px';
+imgObj20.style.bottom = parseInt(imgObj20.style.bottom) + 5 + 'px';
+imgObj21.style.left = parseInt(imgObj21.style.left) + 0 + 'px';
+imgObj21.style.bottom = parseInt(imgObj21.style.bottom) + 11 + 'px';
+imgObj22.style.left = parseInt(imgObj22.style.left) + 0 + 'px';
+imgObj22.style.bottom = parseInt(imgObj22.style.bottom) + 12 + 'px';
+imgObj23.style.left = parseInt(imgObj23.style.left) + 0 + 'px';
+imgObj23.style.bottom = parseInt(imgObj23.style.bottom) + 13 + 'px';
+imgObj24.style.left = parseInt(imgObj24.style.left) + 10 + 'px';
+imgObj24.style.bottom = parseInt(imgObj24.style.bottom) + 10 + 'px';
+imgObj25.style.left = parseInt(imgObj25.style.left) + 10 + 'px';
+imgObj25.style.bottom = parseInt(imgObj25.style.bottom) + 10 + 'px';
+imgObj26.style.left = parseInt(imgObj26.style.left) + 10 + 'px';
+imgObj26.style.bottom = parseInt(imgObj26.style.bottom) + 6 + 'px';
+imgObj27.style.left = parseInt(imgObj27.style.left) + 10 + 'px';
+imgObj27.style.bottom = parseInt(imgObj27.style.bottom) + 15 + 'px';
+imgObj28.style.left = parseInt(imgObj28.style.left) + 10 + 'px';
+imgObj28.style.bottom = parseInt(imgObj28.style.bottom) + 10 + 'px';
+imgObj29.style.left = parseInt(imgObj29.style.left) + 17 + 'px';
+imgObj29.style.bottom = parseInt(imgObj29.style.bottom) + 10 + 'px';
+imgObj30.style.left = parseInt(imgObj30.style.left) + 10 + 'px';
+imgObj30.style.bottom = parseInt(imgObj30.style.bottom) + 10 + 'px';
+imgObj31.style.right = parseInt(imgObj31.style.right) + 20 + 'px';
+imgObj31.style.top = parseInt(imgObj31.style.top) + 20 + 'px';
+imgObj32.style.right = parseInt(imgObj32.style.right) + 20 + 'px';
+imgObj32.style.top = parseInt(imgObj32.style.top) + 17 + 'px';
+imgObj33.style.right = parseInt(imgObj33.style.right) + 20 + 'px';
+imgObj33.style.top = parseInt(imgObj33.style.top) + 14 + 'px';
+imgObj34.style.right = parseInt(imgObj34.style.right) + 20 + 'px';
+imgObj34.style.top = parseInt(imgObj34.style.top) + 11 + 'px';
+imgObj35.style.right = parseInt(imgObj35.style.right) + 20 + 'px';
+imgObj35.style.top = parseInt(imgObj35.style.top) + 8 + 'px';
+imgObj36.style.right = parseInt(imgObj36.style.right) + 20 + 'px';
+imgObj36.style.top = parseInt(imgObj36.style.top) + 5 + 'px';
+imgObj37.style.right = parseInt(imgObj37.style.right) + 20 + 'px';
+imgObj37.style.top = parseInt(imgObj37.style.top) + 3 + 'px';
+imgObj38.style.right = parseInt(imgObj38.style.right) + 3 + 'px';
+imgObj38.style.top = parseInt(imgObj38.style.top) + 20 + 'px';
+imgObj39.style.right = parseInt(imgObj39.style.right) + 6 + 'px';
+imgObj39.style.top = parseInt(imgObj39.style.top) + 20 + 'px';
+imgObj40.style.right = parseInt(imgObj40.style.right) + 10 + 'px';
+imgObj40.style.top = parseInt(imgObj40.style.top) + 20 + 'px';
+imgObj41.style.right = parseInt(imgObj41.style.right) + 13 + 'px';
+imgObj41.style.top = parseInt(imgObj41.style.top) + 20 + 'px';
+imgObj42.style.right = parseInt(imgObj42.style.right) + 16 + 'px';
+imgObj42.style.top = parseInt(imgObj42.style.top) + 20 + 'px';
+imgObj43.style.right = parseInt(imgObj43.style.right) + 15 + 'px';
+imgObj43.style.top = parseInt(imgObj43.style.top) + 10 + 'px';
+imgObj44.style.right = parseInt(imgObj44.style.right) + 13 + 'px';
+imgObj44.style.bottom = parseInt(imgObj44.style.bottom) + 10 + 'px';
+imgObj45.style.right = parseInt(imgObj45.style.right) + 6 + 'px';
+imgObj45.style.bottom = parseInt(imgObj45.style.bottom) + 2 + 'px';
+imgObj46.style.right = parseInt(imgObj46.style.right) + 5 + 'px';
+imgObj46.style.bottom = parseInt(imgObj46.style.bottom) + 14 + 'px';
+imgObj47.style.right = parseInt(imgObj47.style.right) + 25 + 'px';
+imgObj47.style.bottom = parseInt(imgObj47.style.bottom) + 10 + 'px';
+imgObj48.style.right = parseInt(imgObj48.style.right) + 25 + 'px';
+imgObj48.style.bottom = parseInt(imgObj48.style.bottom) + 15 + 'px';
+imgObj49.style.right = parseInt(imgObj49.style.right) + 25 + 'px';
+imgObj49.style.bottom = parseInt(imgObj49.style.bottom) + 6 + 'px';
+imgObj50.style.right = parseInt(imgObj50.style.right) + 25 + 'px';
+imgObj50.style.bottom = parseInt(imgObj50.style.bottom) + 20 + 'px';
+imgObj51.style.right = parseInt(imgObj51.style.right) + 20 + 'px';
+imgObj51.style.bottom = parseInt(imgObj51.style.bottom) + 25 + 'px';
+imgObj52.style.right = parseInt(imgObj52.style.right) + 10 + 'px';
+imgObj52.style.bottom = parseInt(imgObj52.style.bottom) + 25 + 'px';
+imgObj53.style.right = parseInt(imgObj53.style.right) + 5 + 'px';
+imgObj53.style.bottom = parseInt(imgObj53.style.bottom) + 25 + 'px';
+imgObj54.style.right = parseInt(imgObj54.style.right) + 15 + 'px';
+imgObj54.style.bottom = parseInt(imgObj54.style.bottom) + 17 + 'px';
+imgObj55.style.right = parseInt(imgObj55.style.right) + 17 + 'px';
+imgObj55.style.bottom = parseInt(imgObj55.style.bottom) + 11 + 'px';
+imgObj56.style.right = parseInt(imgObj56.style.right) + 11 + 'px';
+imgObj56.style.bottom = parseInt(imgObj56.style.bottom) + 15 + 'px';
+animate = setTimeout(moveRight,1000);
+//animate2= setTimeout(init,10000);
+}
+var text="";
+/*----------------------------------------------------------------*/
+function stop1(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("aa");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop2(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("bb");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop3(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("cc");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop4(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("dd");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop5(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("ee");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop6(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("ff");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop7(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("gg");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop8(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("hh");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop9(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("ii");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop10(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("jj");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop11(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("kk");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop12(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("ll");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop13(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("mm");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop14(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("nn");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop15(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("oo");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop16(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("pp");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop17(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("qq");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop18(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("rr");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop19(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("ss");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop20(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("tt");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop21(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("uu");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop22(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("vv");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop23(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("ww");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop24(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("xx");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop25(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("yy");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop26(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("zz");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop27(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("aaa");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop28(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("bbb");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop29(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("ccc");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop30(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("ddd");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop31(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("eee");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop32(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("fff");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop33(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("ggg");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop34(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("hhh");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop35(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("iii");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop36(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("jjj");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop37(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("kkk");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop38(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("lll");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop39(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("mmm");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop40(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("nnn");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop41(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("ooo");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop42(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("ppp");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop43(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("qqq");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop44(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("rrr");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop45(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("sss");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop46(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("ttt");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop47(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("uuu");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop48(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("vvv");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop49(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("www");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop50(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("xxx");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop51(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("yyy");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop52(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("zzz");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop53(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("aaaa");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop54(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("bbbb");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop55(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("cccc");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+function stop56(){
+clearTimeout(animate);
+//var x=this.innerHTML;
+var x=document.getElementById("dddd");
+text= text + x.innerHTML;
+document.getElementById("three").innerHTML=text;
+}
+
+/*------------------------------------------*/
+function stopa(){
+clearTimeout(animate);
+imgObj1.style.left = '0px';}
+var array = ['अ','आ','इ','ई','उ','ऊ','ए','ऐ','ओ','औ','क','ख','ग','घ','ङ','च','छ','ज','झ','ञ','ट','ठ','ड','ढ','ण','त','थ','द','ध','न','प','फ','ब','भ','म','य','र','ल','व','श','ष','स','ह','ा','ि','ी','ु','ू','ृ',' ॄ','ॅ','े','ै','ॉ','ो','ौ'];
+var imgObj = null;
+var array2=['आ','अँकूर','अँगना','कँगना ','गँवार','चंचल','चंगा','जंकशन','जंगल','टँगड़ी','रँगरुट'];
+var array3=['1.m4a','2.m4a','3.m4a','4.m4a','5.m4a','6.m4a','7.m4a','8.m4a','9.m4a','10.m4a'];
+function timedText() {
+    setTimeout(myTimeout1, 1000) 
+    setTimeout(myTimeout2, 2000) 
+    setTimeout(myTimeout3, 3000) 
+setTimeout(myTimeout4, 4000) 
+    setTimeout(myTimeout5, 5000) 
+    setTimeout(myTimeout6, 6000) 
+setTimeout(myTimeout7, 7000) 
+    setTimeout(myTimeout8, 8000) 
+    setTimeout(myTimeout9, 9000) 
+setTimeout(myTimeout10, 10000) 
+    setTimeout(myTimeout11, 11000) 
+    setTimeout(myTimeout12, 12000) 
+setTimeout(myTimeout13, 13000) 
+    setTimeout(myTimeout14, 14000) 
+    setTimeout(myTimeout15, 15000) 
+setTimeout(myTimeout16, 16000) 
+    setTimeout(myTimeout17, 17000) 
+    setTimeout(myTimeout18, 18000) 
+setTimeout(myTimeout19, 19000) 
+    setTimeout(myTimeout20, 20000) 
+    setTimeout(myTimeout21, 21000) 
+setTimeout(myTimeout22, 22000) 
+    setTimeout(myTimeout23, 23000) 
+    setTimeout(myTimeout24, 24000) 
+setTimeout(myTimeout25, 25000) 
+   setTimeout(myTimeout26, 26000) 
+}
+function myTimeout1() {
+    document.getElementById("demo").innerHTML = "25";
+count=0;document.getElementById("seven").innerHTML="";
+}
+function myTimeout2() {
+    document.getElementById("demo").innerHTML = "24";
+}
+function myTimeout3() {
+    document.getElementById("demo").innerHTML = "23";
+}
+function myTimeout4() {
+    document.getElementById("demo").innerHTML = "22";
+}
+function myTimeout5() {
+    document.getElementById("demo").innerHTML = "21";
+}
+function myTimeout6() {
+    document.getElementById("demo").innerHTML = "20";
+}
+function myTimeout7() {
+    document.getElementById("demo").innerHTML = "19";
+}
+function myTimeout8() {
+    document.getEle
+mentById("demo").innerHTML = "18";
+}
+function myTimeout9() {
+    document.getElementById("demo").innerHTML = "17";
+}
+function myTimeout10() {
+    document.getElementById("demo").innerHTML = "16";
+}
+function myTimeout11() {
+    document.getElementById("demo").innerHTML = "15";
+}
+function myTimeout12() {
+    document.getElementById("demo").innerHTML = "14";
+}
+function myTimeout13() {
+    document.getElementById("demo").innerHTML = "13";
+}
+function myTimeout14() {
+    document.getElementById("demo").innerHTML = "12";
+}
+function myTimeout15() {
+    document.getElementById("demo").innerHTML = "11";
+}
+function myTimeout16() {
+    document.getElementById("demo").innerHTML = "10";
+}
+function myTimeout17() {
+    document.getElementById("demo").innerHTML = "9";
+}
+function myTimeout18() {
+    document.getElementById("demo").innerHTML = "8";
+}
+function myTimeout19() {
+    document.getElementById("demo").innerHTML = "7";
+}
+function myTimeout20() {
+    document.getElementById("demo").innerHTML = "6";
+}
+function myTimeout21() {
+    document.getElementById("demo").innerHTML = "5";
+}
+function myTimeout22() {
+    document.getElementById("demo").innerHTML = "4";
+}
+function myTimeout23() {
+    document.getElementById("demo").innerHTML = "3";
+}
+function myTimeout24() {
+    document.getElementById("demo").innerHTML = "2";
+}
+function myTimeout25() {
+    document.getElementById("demo").innerHTML = "1";
+}
+function myTimeout26() {
+    document.getElementById("one").innerHTML = "PlayAgain";
+document.getElementById("demo").innerHTML = "TimeUp";
+over();
+}
+function over()
+{
+clearTimeout(animate);
+init();
+document.getElementById("five").innerHTML="";
+
+}
+</script>
+
+</body>
+</html>
+

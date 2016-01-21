@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Find Your Service Provider</title>
+
+	<!---------- CSS ------------>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!--BEGIN #signup-form -->
+    <div id="signup-form">
+        
+        <!--BEGIN #subscribe-inner--> 
+        <div id="signup-inner">
+        
+        	<div class="clearfix" id="header">
+        	
+        		<img id="icon" src="54.png" alt="" />
+        
+                <h1>THANK YOU FOR REGISTERING WITH US</h1>
+
+            
+            </div>
+			<p></p>
+
+            
+            <form id="send" action="">
+  
+
+</body>
+</html>

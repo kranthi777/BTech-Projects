@@ -1,0 +1,17 @@
+ c code for cyk algorithm.
+It will work in the following way:
+1)Compile the code in the terminal in the following way.
+=>gcc cyk.c
+2)Then run the code
+=>./a.out
+3)Give Input in the following way..
+=>string to be checked
+=>grammar in chomsky normal form
+=>after grammar end put a "." in the next line to conform the end of rules
+e.g)
+bb
+B->b
+X->BB
+.
+
+after this you will get output...

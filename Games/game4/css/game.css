@@ -1,0 +1,112 @@
+html
+{
+width:100%;
+}
+body 
+{
+   background-image: url("../images/image4.jpg");
+    background-color: #cccccc;
+} 
+/*----------------------styling the name of the game-----------------------------*/
+#Gname
+{
+position:absolute;
+margin-top:1%;
+margin-left:25%;
+font-weight:bold;
+font-size:45px;
+color:white;
+width:40%;
+text-align:center;
+background-color:orange;
+opacity:0.9;
+border: 15px solid white;
+border-radius: 25px;
+}
+/*----------------------------------------------------------------*/
+#Aname
+{
+position:absolute;
+margin-top:5%;
+margin-left:50%;
+font-weight:bold;
+font-size:15px;
+color:white;
+width:20%;
+text-align:center;
+background-color:black;
+opacity:0.7;
+border: 15px solid white;
+border-radius: 25px;
+}
+/*---------------------------------------------------------------------*/
+#c1
+{
+position:fixed;
+margin-top:20%;
+margin-left:30%;
+width:60px;
+height:40px;
+}
+#c2
+{
+position:fixed;
+margin-top:20%;
+margin-left:60%;
+width:60px;
+height:40px;
+}
+#c3
+{
+position:fixed;
+margin-top:30%;
+margin-left:50%;
+width:60px;
+height:40px;
+}
+#c4
+{
+position:fixed;
+margin-top:30%;
+margin-left:40%;
+width:60px;
+height:40px;
+}
+#c5
+{
+position:fixed;
+margin-top:40%;
+margin-left:30%;
+width:60px;
+height:40px;
+}
+#score
+{
+position:absolute;
+margin-top:1%;
+margin-left:85%;
+font-weight:bold;
+font-size:45px;
+color:white;
+width:10%;
+text-align:center;
+background-color:orange;
+opacity:0.9;
+border: 15px solid white;
+border-radius: 25px;
+}
+#count
+{
+position:absolute;
+margin-top:1%;
+margin-left:5%;
+font-weight:bold;
+font-size:45px;
+color:white;
+width:10%;
+text-align:center;
+background-color:orange;
+opacity:0.9;
+border: 15px solid white;
+border-radius: 25px;
+}

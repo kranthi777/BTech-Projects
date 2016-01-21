@@ -1,0 +1,34 @@
+﻿var text = '{ "spellings" : [' +
+'{ "correct":"1" , "word":"సుస్వాగతం" },' +
+'{ "correct":"0" , "word":"ఉన" },' +
+'{ "correct":"1" , "word":"ఊరు" },' +
+'{ "correct":"0" , "word":"నమస్కరం" },' +
+'{ "correct":"1" , "word":"అవుతుంది" },' +
+'{ "correct":"0" , "word":"ప్రయణం" },' +
+'{ "correct":"1" , "word":"దినం" },' +
+'{ "correct":"0" , "word":"మట్లడతర" },' +
+'{ "correct":"1" , "word":"ఆరోగ్యం" },' +
+'{ "correct":"0" , "word":"మత్రంగ" },' +
+'{ "correct":"1" , "word":"కలగాలి" },' +
+'{ "correct":"0" , "word":"క్షమించడి" },' +
+'{ "correct":"1" , "word":"ఇక సెలవు" },' +
+'{ "correct":"0" , "word":"ధన్యవదములు" },' +
+'{ "correct":"1" , "word":"వీడ్కోలు" },' +
+'{ "correct":"0" , "word":"సంతషం" },' +
+'{ "correct":"1" , "word":"శుభ రాత్రి" },' +
+'{ "correct":"0" , "word":"ఇస్తరు" },' +
+'{ "correct":"1" , "word":"నమస్తే" },' +
+'{ "correct":"0" , "word":"ప్రేమిస్తున్నను" },' +
+'{ "correct":"1" , "word":"శుభ దినం" },' +
+'{ "correct":"0" , "word":"కరుకుంటున్నను" },' +
+'{ "correct":"1" , "word":"శుభోదయం" },' +
+'{ "correct":"0" , "word":"సహయం" },' +
+'{ "correct":"1" , "word":"ఉంది" },' +
+'{ "correct":"0" , "word":"వచ్చను" },' +
+'{ "correct":"1" , "word":"చూసి" },' +
+'{ "correct":"0" , "word":"పరేమడి" },' +
+'{ "correct":"1" , "word":"నమస్కారం" },' +
+'{ "correct":"1" , "word":"ప్రయాణం" },' +
+'{ "correct":"1" , "word":"చెప్పండి" },' +
+'{ "correct":"1" , "word":"రాయండి" } ]}';
+

@@ -1,0 +1,97 @@
+Project Plan: ( Find Your Service Provider )
+Written by: 
+( Ashish Verma,K.Kranthi, Rohit Varma )
+
+1 Introduction
+
+The team members consists of 3 students of Indian Institute of Information
+Technology, Sricity. We are going to develop an app that is going to make
+life easy in terms of service provider.
+
+2 Overview
+
+The project is to develop a web based application and a mobile based application
+like naukri.com and internshala.com.It will differ from the existing applications in
+terms of employeer.In existing application employeer are firms and jobs are there
+for dignified position this application any individual can be employeer eg: if you
+want electrician we can get that electrician on this portal likewise any other service
+provider can be found on this portal. This portal will be great place for those who
+are looking for part-time jobs and also for those who earn their livelihood on daily
+basis.
+
+2.1 Customers
+
+Customer will be service provider who depend on finding job on daily basis
+to earn their livelihood.They can find job here.
+Other set of customer contain those who look for service provider to
+get their job done.
+
+2.2 Functionality
+
+App will find service provider who are having good reviews and who are
+nearest to
+the location of the user.
+User can discuss problem with their recommended service provider and fix
+their charges by using the chat box.
+
+2.3 Platform
+
+Java,Php,google distance matrix api,machine learning,android app
+development platform.
+
+2.4 Development Responsibility
+
+Ashish will be going through use of cassandra and google distance matrix
+api. Kranthi will look android app development while Rohit will look on
+Php part and machine learning part to optimize the search.
+
+3 Goals and Scope
+
+App will find service provider who are having good reviews and who are
+nearest to
+the location of the user.
+User can discuss problem with their recommended service provider and fix
+their charges by using the chat box.
+
+4 Deliverables
+
+Milestones Due Date Release Deliverable?
+Prototype of app 25/10/2015 Pre-
+Beta Yes
+Final Version of game web based app 31/10/2015 Final Yes
+First version of android app 10/11/2015 Pre-
+Beta Yes
+Second version of android app 25/11/2015 Beta Yes
+Final release 10/12/2015 Final Yes
+
+5 Risk Management
+
+5.1 Risk Identification
+
+Main risk is to use google distance matrix api as api cost nothing for 2500
+use per day after that we need to pay.We need to use the api judiciously so
+that we can't ask api distance between two place which we have already
+asked.
+
+5.2 Risk Mitigation
+
+We need to store distance between two place in a database after it is asked
+for the first
+time and we need to look into database for the distance once it is asked
+again.
+
+6 Scheduling and Estimates
+
+Milestones Due Date Release Deliverable?
+Prototype of app 25/10/2015 Pre-
+Beta Yes
+Final Version of web based app 31/10/2015 Final Yes
+First version of android app 10/11/2015 Pre-
+Beta Yes
+Second version of android app 25/11/2015 Beta Yes
+Final release 10/12/2015 Final Yes
+
+7 Technical Process
+
+We have started working on Java and how to use google
+distance matrix api use.We are still counting..

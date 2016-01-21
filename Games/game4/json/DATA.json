@@ -1,0 +1,89 @@
+var text = '{ "languages" : [' +
+'{"type":"English" },' +
+'{"type":"हिन्दी"},' +
+'{"type":"ಕನ್ನಾಡ್"},' +
+'{"type":"ગુજરાતી"},' +
+'{"type":"తెల్గు "}]}';
+
+var  हिन्दी= '{ "languages" : [' +
+'{"type":"अ"},' +
+'{"type":"आ"},' +
+'{"type":"इ"},' +
+'{"type":"ई"},' +
+'{"type":"उ"},' +
+'{"type":"ऊ"},' +
+'{"type":"ऋ"},' +
+'{"type":"ए"},' +
+'{"type":"ऐ"},' +
+'{"type":"ओ"},' +
+'{"type":"औ"},' +
+'{"type":"अं"},' +
+'{"type":"अँ"},' +
+'{"type":"क"},' +
+'{"type":"ख"},' +
+'{"type":"ग"},' +
+'{"type":"घ"},' +
+'{"type":"ङ"},' +
+'{"type":"च"},' +
+'{"type":"छ"},' +
+'{"type":"ज"},' +
+'{"type":"झ"},' +
+'{"type":"ञ"},' +
+'{"type":"ट"},' +
+'{"type":"ठ"},' +
+'{"type":"ड"},' +
+'{"type":"ढ"},' +
+'{"type":"ण"},' +
+'{"type":"त"},' +
+'{"type":"थ"},' +
+'{"type":"द"},' +
+'{"type":"ध"}]}';
+
+var  English= '{ "languages" : [' +
+'{"type":"A"},' +
+'{"type":"B"},' +
+'{"type":"C"},' +
+'{"type":"D"},' +
+'{"type":"E"},' +
+'{"type":"F"},' +
+'{"type":"G"},' +
+'{"type":"H"},' +
+'{"type":"I"},' +
+'{"type":"J"},' +
+'{"type":"K"},' +
+'{"type":"L"},' +
+'{"type":"M"},' +
+'{"type":"N"},' +
+'{"type":"O"},' +
+'{"type":"P"},' +
+'{"type":"Q"},' +
+'{"type":"R"},' +
+'{"type":"S"},' +
+'{"type":"T"},' +
+'{"type":"U"},' +
+'{"type":"V"},' +
+'{"type":"W"},' +
+'{"type":"X"},' +
+'{"type":"Y"},' +
+'{"type":"Z"}]}';
+
+var अ = '{ "images" : [' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"0","sourc":"../images/images12.jpeg"},' +
+'{"type":"1","sourc":"../images/images13.jpeg"},' +
+'{"type":"1","sourc":"../images/images14.jpeg"},' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"0","sourc":"../images/image11.jpg"},' +
+'{"type":"1","sourc":"../images/image15.jpg"}]}';
+

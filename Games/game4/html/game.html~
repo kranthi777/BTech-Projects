@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../css/game.css">
+<script  type="text/javascript" src="../json/DATA.json"></script>
+<meta http-equiv="Content-Type" content="text/html"charset="UTF-8">
+<title>Piclrn</title>
+</head>
+
+
+
+
+<body onload="start()">
+
+<p id="Gname">Piclrn</p>
+<p id="Aname">By Ashish Verma</p>
+<div id="new">
+</div>
+
+<p id="count"></p>
+<p id="score"></p>
+<script  type="text/javascript" src="../js/game.js"></script>
+</body>
+
+</html> 

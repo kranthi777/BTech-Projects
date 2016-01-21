@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../css/alphabet.css">
+<script  type="text/javascript" src="../json/DATA.json"></script>
+<meta http-equiv="Content-Type" content="text/html"charset="UTF-8">
+<title>Piclrn</title>
+</head>
+
+
+
+
+<body>
+
+<p id="Gname">Piclrn</p>
+<p id="Aname">By Ashish Verma</p>
+<a href="#alphabets"><p id="alphabet">S</br>e</br>l</br>e</br>c</br>t</br> </br>T</br>h</br>e</br> </br>a</br>l</br>p</br>h</br>a</br>b</br>e</br>t</p></a>
+
+<a name="languages"><p id="one"></p></a>
+<a name="rule"><p id="two"></p></a>
+<script  type="text/javascript" src="../js/alphabets.js"></script>
+</body>
+
+</html> 

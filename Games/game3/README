@@ -1,0 +1,12 @@
+Open game.html in any browser.
+How to play..
+1)press start button..your timer starts...total time allowed is 25 sec.
+2)after that press play button..enable sound in your device.
+3)a word will be pronounced there.
+4)once you pause or stop that pronounce part alphabets will start popping up from different sides of the device.
+5)you need to select alphabets in the sequence such that when all alphabets selected concatenated in the same 
+sequence results same spelling as the pronounced word.
+6)If concatenations spells the same as pronounced word then you will be awarded with 1 point, else 0 point.
+7)YOUR TASK IS TO COLLECT MAX POINTS IN THE GIVEN TIME.
+THERE IS NO WINNING OR LOSING CONDITION,ONLY TOTAL POINTS MATTER.
+..........................................................................................
